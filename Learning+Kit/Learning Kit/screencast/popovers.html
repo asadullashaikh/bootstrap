@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Learning Kit – Screencast – Components: Popovers</title>
+    <title>Bootstrap 5 Learning Kit – Reference – Components: Popovers</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/zenburn.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -117,9 +117,9 @@
               </li>
             </ul>
             <div class="btn-group btn-group-sm" role="group" aria-label="Toggle section">
-              <a href="../reference/popovers.html" class="btn btn-secondary">Reference</a>
+              <a href="../reference/popovers.html" class="btn btn-dark">Reference</a>
               <a href="../practice/popovers.html" class="btn btn-secondary">Practice</a>
-              <a href="../screencast/popovers.html" class="btn btn-dark">Screencast</a>
+              <a href="../screencast/popovers.html" class="btn btn-secondary">Screencast</a>
             </div>
           </div>
         </div>
@@ -144,42 +144,45 @@
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Link</h3>
               <div class="code-live">
-                
+                <a href="#" data-bs-toggle="popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover for link</a>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Button</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover for button</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Title</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover with title</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Custom HTML</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true" title="<span class='badge bg-primary'>Popover title</span>" data-bs-content="<strong>Popover</strong> <small>with</small> <em>custom HTML</em>">Popover with custom HTML</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Position</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on top</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on right</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on bottom</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="left" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on left</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Animation</h3>
               <div class="code-live">
-               
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-animation="false" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover without animation</button>
               </div>
             </div>
 
@@ -187,7 +190,7 @@
               <h3 class="component-variation text-muted">Delay</h3>
               <p>Popover with delay in ms for showing and hiding</p>
               <div class="code-live">
-               
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-delay="500" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover with delay</button>
               </div>
             </div>
 
@@ -195,7 +198,7 @@
               <h3 class="component-variation text-muted">Trigger type</h3>
               <p>Popover triggered by click and hover</p>
               <div class="code-live">
-               
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-trigger="click hover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Trigger by click and hover</button>
               </div>
             </div>
 
@@ -203,14 +206,16 @@
               <h3 class="component-variation text-muted">Dismissible</h3>
               <p>Dismiss on next click outside of element</p>
               <div class="code-live">
-                
+                <a href="#!" class="btn btn-secondary" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Dismiss on next click</a>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Disabled elements</h3>
               <div class="code-live">
-                
+                <span class="d-inline-block" data-bs-toggle="popover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">
+                  <button type="button" class="btn btn-secondary" disabled style="pointer-events: none;">Popover for disabled element</button>
+                </span>
               </div>
             </div>
 
@@ -227,7 +232,10 @@
 
     <!-- Enable all popovers -->
     <script>
-      
+      var popoverTriggerElements = document.querySelectorAll('[data-bs-toggle="popover"]');
+      for (var i = 0; i < popoverTriggerElements.length; i++) {
+        new bootstrap.Popover(popoverTriggerElements[i])
+      }
     </script>
   </body>
 </html>

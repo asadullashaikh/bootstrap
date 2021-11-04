@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Learning Kit – Screencast – Components: Spinners</title>
+    <title>Bootstrap 5 Learning Kit – Reference – Components: Spinners</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/zenburn.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -117,9 +117,9 @@
               </li>
             </ul>
             <div class="btn-group btn-group-sm" role="group" aria-label="Toggle section">
-              <a href="../reference/spinners.html" class="btn btn-secondary">Reference</a>
+              <a href="../reference/spinners.html" class="btn btn-dark">Reference</a>
               <a href="../practice/spinners.html" class="btn btn-secondary">Practice</a>
-              <a href="../screencast/spinners.html" class="btn btn-dark">Screencast</a>
+              <a href="../screencast/spinners.html" class="btn btn-secondary">Screencast</a>
             </div>
           </div>
         </div>
@@ -144,35 +144,121 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Border spinner</h3>
               <div class="code-live">
-                
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Growing spinner</h3>
               <div class="code-live">
-                
+                <div class="spinner-grow" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Colors</h3>
               <div class="code-live">
-                
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-light" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-dark" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <br><br>
+                <div class="spinner-grow text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
-                
+                <div class="spinner-border spinner-border-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border" role="status" style="width: 3rem; height: 3rem;">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <br><br>
+                <div class="spinner-grow spinner-grow-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow" role="status" style="width: 3rem; height: 3rem;">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">In buttons</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-primary" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  <span class="visually-hidden">Loading...</span>
+                </button>
+                <button type="button" class="btn btn-primary" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+                <br><br>
+                <button type="button" class="btn btn-primary" disabled>
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  <span class="visually-hidden">Loading...</span>
+                </button>
+                <button type="button" class="btn btn-primary" disabled>
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
               </div>
             </div>
 
@@ -181,13 +267,31 @@
               <p>Use <a href="spacing.html">spacing</a>, <a href="flex.html">flex</a>, <a href="float.html">float</a> and <a href="text.html">text</a> utilities to align and place your spinner as needed.</p>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Margin</h4>
-                
+                <div class="spinner-border m-3" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
                 <h4 class="h5 text-muted mt-3">Flex</h4>
-                
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <strong>Loading...</strong>
+                  <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Float</h4>
-                
+                <div class="clearfix">
+                  <div class="spinner-border float-end" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Text align</h4>
-                
+                <div class="text-center">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
               </div>
             </div>
 

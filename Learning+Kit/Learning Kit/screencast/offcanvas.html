@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Learning Kit – Screencast – Components: Offcanvas</title>
+    <title>Bootstrap 5 Learning Kit – Reference – Components: Offcanvas</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/zenburn.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -117,9 +117,9 @@
               </li>
             </ul>
             <div class="btn-group btn-group-sm" role="group" aria-label="Toggle section">
-              <a href="../reference/offcanvas.html" class="btn btn-secondary">Reference</a>
+              <a href="../reference/offcanvas.html" class="btn btn-dark">Reference</a>
               <a href="../practice/offcanvas.html" class="btn btn-secondary">Practice</a>
-              <a href="../screencast/offcanvas.html" class="btn btn-dark">Screencast</a>
+              <a href="../screencast/offcanvas.html" class="btn btn-secondary">Screencast</a>
             </div>
           </div>
         </div>
@@ -145,10 +145,18 @@
               <h3 class="component-variation text-muted">Trigger</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Button trigger</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTrigger" aria-controls="offcanvasTrigger">Open offcanvas</button>
                 <h4 class="h5 text-muted mt-3">Link trigger</h4>
-                
-                
+                <a href="#offcanvasTrigger" role="button" class="btn btn-primary" data-bs-toggle="offcanvas" aria-controls="offcanvasTrigger">Open offcanvas</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTrigger" aria-labelledby="offcanvasTriggerLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTriggerLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -156,13 +164,49 @@
               <h3 class="component-variation text-muted">Placement</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Start</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">Open offcanvas</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasStartLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">End</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd">Open offcanvas</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasEndLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Top</h4>
-
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Open offcanvas</button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Bottom</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Open offcanvas</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -170,11 +214,38 @@
               <h3 class="component-variation text-muted">Options</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Enable body scrolling</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScroll" aria-controls="offcanvasScroll">Open offcanvas</button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScroll" aria-labelledby="offcanvasScrollLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Disable backdrop</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBackdrop" aria-controls="offcanvasBackdrop">Open offcanvas</button>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasBackdrop" aria-labelledby="offcanvasBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBackdropLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
                 <h4 class="h5 text-muted mt-3">Disable keyboard</h4>
-                
+                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboard" aria-controls="offcanvasKeyboard">Open offcanvas</button>
+                <div class="offcanvas offcanvas-start" data-bs-keyboard="false" tabindex="-1" id="offcanvasKeyboard" aria-labelledby="offcanvasKeyboardLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasKeyboardLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                  </div>
+                </div>
               </div>
             </div>
 

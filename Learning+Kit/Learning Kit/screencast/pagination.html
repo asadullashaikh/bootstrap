@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Learning Kit – Screencast – Components: Pagination</title>
+    <title>Bootstrap 5 Learning Kit – Reference – Components: Pagination</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/zenburn.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -117,9 +117,9 @@
               </li>
             </ul>
             <div class="btn-group btn-group-sm" role="group" aria-label="Toggle section">
-              <a href="../reference/pagination.html" class="btn btn-secondary">Reference</a>
+              <a href="../reference/pagination.html" class="btn btn-dark">Reference</a>
               <a href="../practice/pagination.html" class="btn btn-secondary">Practice</a>
-              <a href="../screencast/pagination.html" class="btn btn-dark">Screencast</a>
+              <a href="../screencast/pagination.html" class="btn btn-secondary">Screencast</a>
             </div>
           </div>
         </div>
@@ -144,21 +144,59 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Numbers and text</h3>
               <div class="code-live">
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Numbers and icons</h3>
               <div class="code-live">
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a href="#" class="page-link" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item">
+                      <a href="#" class="page-link" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Active and disabled items</h3>
               <div class="code-live">
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a href="#" class="page-link">
+                        3 <span class="visually-hidden">(current)</span>
+                      </a>
+                    </li>
+                    <li class="page-item disabled">
+                      <a href="#" class="page-link" tabindex="-1" aria-disabled="true">Next</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
 
@@ -166,21 +204,78 @@
               <h3 class="component-variation text-muted">Active and disabled items without anchors</h3>
               <div class="code-live">
                 <p><code>&lt;span&gt;</code> elements for active and disabled page links:</p>
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">
+                        3 <span class="visually-hidden">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item disabled">
+                      <span class="page-link">Next</span>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
+                <nav aria-label="Search results pages">
+                  <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
+                <nav aria-label="Search results pages">
+                  <ul class="pagination pagination-lg">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Alignment</h3>
               <div class="code-live">
-                
+                <nav aria-label="Search results pages">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
+                <nav aria-label="Search results pages">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
 

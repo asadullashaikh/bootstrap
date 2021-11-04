@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Learning Kit – Screencast – Components: Tooltips</title>
+    <title>Bootstrap 5 Learning Kit – Reference – Components: Tooltips</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/zenburn.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -117,9 +117,9 @@
               </li>
             </ul>
             <div class="btn-group btn-group-sm" role="group" aria-label="Toggle section">
-              <a href="../reference/tooltips.html" class="btn btn-secondary">Reference</a>
+              <a href="../reference/tooltips.html" class="btn btn-dark">Reference</a>
               <a href="../practice/tooltips.html" class="btn btn-secondary">Practice</a>
-              <a href="../screencast/tooltips.html" class="btn btn-dark">Screencast</a>
+              <a href="../screencast/tooltips.html" class="btn btn-secondary">Screencast</a>
             </div>
           </div>
         </div>
@@ -144,35 +144,38 @@
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Link</h3>
               <div class="code-live">
-                
+                <a href="#" data-bs-toggle="tooltip" title="Tooltip on top">Tooltip for link</a>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Button</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on top">Tooltip for button</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Custom HTML</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="<strong>Tooltip</strong> <small>with</small> <span class='badge bg-primary'>custom</span> <em>HTML</em>" data-bs-html="true">Tooltip with custom HTML</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Position</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on top" data-bs-placement="top">Tooltip on top</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on right" data-bs-placement="right">Tooltip on right</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on bottom" data-bs-placement="bottom">Tooltip on bottom</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on left" data-bs-placement="left">Tooltip on left</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Animation</h3>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip without animation" data-bs-animation="false">Tooltip without animation</button>
               </div>
             </div>
 
@@ -180,7 +183,7 @@
               <h3 class="component-variation text-muted">Delay</h3>
               <p>Tooltip with delay in ms for showing and hiding</p>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip with delay" data-bs-delay="500">Tooltip with delay</button>
               </div>
             </div>
 
@@ -188,14 +191,16 @@
               <h3 class="component-variation text-muted">Trigger type</h3>
               <p>Tooltip triggered by click only</p>
               <div class="code-live">
-                
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Triggered by click" data-bs-trigger="click">Trigger by click</button>
               </div>
             </div>
 
             <div class="code-example mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
               <h3 class="component-variation text-muted">Disabled elements</h3>
               <div class="code-live">
-                
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Tooltip for disabled element">
+                  <button type="button" class="btn btn-secondary" disabled style="pointer-events: none;">Tooltip for disabled element</button>
+                </span>
               </div>
             </div>
 
@@ -212,7 +217,10 @@
 
     <!-- Enable all tooltips -->
     <script>
-      
+      var tooltipTriggerElements = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      for (var i = 0; i < tooltipTriggerElements.length; i++) {
+        new bootstrap.Tooltip(tooltipTriggerElements[i])
+      }
     </script>
   </body>
 </html>
