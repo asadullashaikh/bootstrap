@@ -145,14 +145,16 @@
               <h3 class="component-variation text-muted">Text input</h3>
               <p>Applies to various textual inputs like <code>type="text"</code>, <code>type="search"</code>, <code>type="email"</code>, <code>type="url"</code>, <code>type="tel"</code>, <code>type="password"</code> and <code>type="number"</code>.</p>
               <div class="code-live">
-                
+                <label for="inputText" class="form-label">Text input label</label>
+                <input type="text" class="form-control" placeholder="Text input placeholder" id="inputText">
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Textarea</h3>
               <div class="code-live">
-                
+                <label for="textarea" class="form-label">Textarea</label>
+                <textarea class="form-control" id="textarea" rows="5" placeholder="Write your message here."></textarea>
               </div>
             </div>
 
@@ -160,23 +162,27 @@
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Small</h4>
-                
+                <label for="inputTextSmall" class="form-label">Text input label</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Text input placeholder" id="inputTextSmall">
                 <h4 class="h5 text-muted mt-3">Large</h4>
-                
+                <label for="inputTextLarge" class="form-label">Text input label</label>
+                <input type="text" class="form-control form-control-lg" placeholder="Text input placeholder" id="inputTextLarge">
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Readonly</h3>
               <div class="code-live">
-                
+                <label for="inputTextReadonly" class="form-label">Text input label</label>
+                <input type="text" class="form-control" placeholder="Text input placeholder" id="inputTextReadonly" readonly>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Readonly plain text</h3>
               <div class="code-live">
-                
+                <label for="inputTextReadonlyPlaintext" class="form-label">Text input label</label>
+                <input type="text" class="form-control-plaintext" placeholder="Text input placeholder" id="inputTextReadonlyPlaintext" readonly>
               </div>
             </div>
 
@@ -184,29 +190,43 @@
               <h3 class="component-variation text-muted">File</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Default</h4>
-                
+                <label class="form-label" for="inputFile">Default file input label</label>
+                <input type="file" class="form-control" id="inputFile">
                 <h4 class="h5 text-muted mt-3">Multiple</h4>
-                
+                <label class="form-label" for="inputFileMultiple">Multiple file input label</label>
+                <input type="file" class="form-control" id="inputFileMultiple" multiple>
                 <h4 class="h5 text-muted mt-3">Disabled</h4>
-                
+                <label class="form-label" for="inputFileDisabled">Disabled file input label</label>
+                <input type="file" class="form-control" id="inputFileDisabled" disabled>
                 <h4 class="h5 text-muted mt-3">Small</h4>
-                
+                <label class="form-label" for="inputFileSmall">Small file input label</label>
+                <input type="file" class="form-control form-control-sm" id="inputFileSmall">
                 <h4 class="h5 text-muted mt-3">Large</h4>
-                
+                <label class="form-label" for="inputFileLarge">Large file input label</label>
+                <input type="file" class="form-control form-control-lg" id="inputFileLarge">
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Color picker</h3>
               <div class="code-live">
-                
+                <label for="inputColor" class="form-label">Color input label</label>
+                <input type="color" class="form-control form-control-color" id="inputColor" value="#7952b3" title="Choose color">
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Datalist</h3>
               <div class="code-live">
-                
+                <label for="datalist" class="form-label">Datalist label</label>
+                <input class="form-control" list="datalistOptions" id="datalist" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                  <option value="Bootstrap">
+                  <option value="Foundation">
+                  <option value="Semantic UI">
+                  <option value="Bulma">
+                  <option value="Materialize">
+                </datalist>
               </div>
             </div>
 
